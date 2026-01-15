@@ -9,6 +9,7 @@ import PackageManagement from "./pages/Packages/PackageManagement";
 import ReportPage from "./pages/Reports/ReportPage";
 import SettingsPage from "./pages/SettingsPage";
 import SecuritySettings from "./pages/SecuritySettings";
+import ContentModeration from "./pages/ContentModeration/ContentModeration";
 import { AuthProvider } from "./contexts/AuthContext.jsx";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
               element={<PackageManagement/>}
             />
             <Route path="/reports" element={<ReportPage/>} />
+            <Route path="/content-moderation" element={<ContentModeration/>} />
             <Route path="/settings" element={<SecuritySettings/>} />
              <Route path="/profile" element={<SettingsPage/>} />
           </Route>

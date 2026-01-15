@@ -44,6 +44,16 @@ export const API_ENDPOINTS = {
     USER_ANALYTICS: `${API_BASE_URL}/api/reports/generate/user-analytics`,
     TICKET_SUMMARY: `${API_BASE_URL}/api/reports/generate/ticket-summary`,
   },
+
+  // Posts endpoints
+  POSTS: {
+    ADMIN_REPORTS: `${API_BASE_URL}/api/posts/admin/reports`,
+    ADMIN_BLOCKED_USERS: `${API_BASE_URL}/api/posts/admin/blocked-users`,
+    ADMIN_STATS: `${API_BASE_URL}/api/posts/admin/stats`,
+    ADMIN_DELETE_POST: (postId) => `${API_BASE_URL}/api/posts/admin/posts/${postId}`,
+    ADMIN_BLOCK_USER: (userId) => `${API_BASE_URL}/api/posts/admin/users/${userId}/block`,
+    ADMIN_UNBLOCK_USER: (userId) => `${API_BASE_URL}/api/posts/admin/users/${userId}/unblock`,
+  },
 };
 
 // HTTP client configuration
